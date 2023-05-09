@@ -23,7 +23,16 @@ header {
     display: flex;
     flex-direction: column;
     }
-
+.header {
+  display: flex;
+  align-items: center;
+} 
+.header img {
+  width: 50%;
+}
+.header form {
+  width: 50%;
+}
     main {
         max-width: 900px;
         margin: 0 auto;
@@ -32,15 +41,17 @@ header {
 .article-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   
   /* Estilos para los artículos */
   .article {
-    width: 30%;
+    width: 100%;
+    max-width: 48%;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     padding: 10px;
+    
   }
   
   .article img {
@@ -49,8 +60,24 @@ header {
   
   .article p {
     margin: 0;
+    display: none;
   }
-  
+  .article:hover p {
+    display: block;
+  }
+  .article:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+.fa-solid.fa-truck:hover {
+transform: translateX(195px)  rotate(-90deg);
+transition: transform 2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0022aa;
+}
+
   .article button {
     margin-top: 10px;
     background-color: #007bff;
@@ -63,6 +90,19 @@ header {
   
   .article button:hover {
     background-color: #0062cc;
+  }
+
+  .article p:nth-child(3) {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    margin: 0;
+  }
+  .article p:nth-child(4) {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    margin: 0;
   }
   .navbar {
     display: flex;
@@ -120,6 +160,18 @@ header {
   
   .pago, .envio, .seguridad {
     text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .article {
+      max-width: calc(50% - 10px);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .article {
+      max-width: calc(25% - 15px);
+    }
   }
 
   @media screen and (min-width: 361px) {

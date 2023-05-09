@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+    
+    <label for="usuario">Nombre de usuario:</label>
+    <input type="text" id="usuario" name="usuario" required>
+    
+    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    
+    <label for="domicilio">Domicilio:</label>
+    <textarea id="domicilio" name="domicilio" required></textarea>
+    
+    <label for="perfil">Perfil del usuario:</label>
+    <input type="radio" id="comprador" name="perfil" value="comprador" required>
+    <label for="comprador">Comprador</label>
+    <input type="radio" id="vendedor" name="perfil" value="vendedor" required>
+    <label for="vendedor">Vendedor</label>
+    
+    <label for="categorias">Categorías de interés:</label>
+    <select id="categorias" name="categorias[]" multiple required>
+        <option value="electro">Electro</option>
+        <option value="moda">Moda</option>
+        <option value="hogar">Hogar</option>
+        <option value="jugueteria">Juguetería</option>
+        <option value="vidasana">Vida sana</option>
+    </select>
+    
+    <label for="foto">Foto de usuario:</label>
+    <input type="file" id="foto" name="foto" accept="image/*" required>
+    
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required>
+    
+    <label for="confirmar_contrasena">Confirmar contraseña:</label>
+    <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+    
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+    
+</body>
+</html>
