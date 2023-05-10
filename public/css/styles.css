@@ -1,5 +1,6 @@
 body {
     background: #EAC926;
+    align-items: center;
 }
 
 a span {
@@ -17,12 +18,94 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     display: flex;
-    
-    padding: auto;
+    padding: 1rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     }
+
+    .search-bar {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      margin: 0 1rem;
+    }
+    nav {
+      flex: 1;
+      text-align: right;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 0.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      margin-right: 10px;
+    }
+    .logo img {
+      height: 50px;
+    
+    }
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      flex:1;
+      
+    }
+    .busqueda {
+      display: flex;
+      top: 20px;
+      position: relative;
+    }
+  .busqueda input[type="text"] {
+border-radius: 20px;
+border: 1px solid #ccc;
+padding: 5px 10px;
+margin-right: 10px;
+font-size: 16px;
+  }
+  .busqueda button[type="submit"] {
+    border-radius: 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .cuotas {
+    display: flex;
+    align-items: center;
+    top: 10px;
+    position: relative;
+  }
+  .cuotas i {
+    margin-right: 5px;
+  }
+
+.burger-menu i {
+  font-size: 24px;
+  cursor: pointer;
+}
 .header {
   display: flex;
   align-items: center;
@@ -42,6 +125,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
   }
   
   /* Estilos para los artículos */
@@ -51,11 +135,13 @@ header {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     padding: 10px;
+    align-items: center;
     
   }
   
   .article img {
     width: 100%;
+    align-items: center;
   }
   
   .article p {
